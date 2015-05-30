@@ -1,0 +1,3 @@
+[submodule "keyfreq"]
+	path = ext-packages/keyfreq
+	url = https://github.com/dacap/keyfreq.git
