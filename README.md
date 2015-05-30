@@ -9,10 +9,13 @@ Do backup your original configurations in .emacs and .emacs.d, as follows
 $ mv .emacs .emacs.backup && mv .emacs.d .emacs.d.backup
 ```
 
-After that, checkout this configuration by issuing the following command.
+After that, checkout this configuration by issuing the following commands.
 
 ```
-$ git clone https://github.com/benquike/emacs.d ~/.emacs.d
+$ git clone --recursive https://github.com/benquike/emacs.d ~/.emacs.d
+```
+```
+$ git submodule update --init
 ```
 
 
@@ -36,3 +39,7 @@ $ git clone https://github.com/benquike/emacs.d ~/.emacs.d
 	* A template system, using witch you could input an abbrevation
 	 and Emacs will expand it to some template for you, like function
 	 definition, file inclusion ....
+
+* [markdown-mode](http://jblevins.org/projects/markdown-mode/)
+	* The Edit mode for Markdown format
+
