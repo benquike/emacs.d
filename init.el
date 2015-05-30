@@ -21,6 +21,7 @@
 
 (let ((load-dir (file-name-directory load-file-name)))
   (load-files-wildcards (format "%s/*-init.el" load-dir))
+  (load-files-wildcards (format "%s/**/dir-init.el" load-dir))
   (load-files-wildcards (format "%s/**/*-init.el" load-dir))
 )
 
