@@ -24,3 +24,15 @@ $ git clone https://github.com/benquike/emacs.d ~/.emacs.d
 	thus decide how to　inprove your edit efficiency by
 	modifying your keybindings.
 
+* [ggtags](https://github.com/leoliu/ggtags)
+	* An Emacs interface for [GNU Global](http://www.gnu.org/software/global/),
+	  a source taging and searching tool.
+
+* [company-mode](http://company-mode.github.io/)
+	* A completion framework, which stands for **comp**lete for
+	**any**thing.
+
+* [yasnippet](https://github.com/capitaomorte/yasnippet)
+	* A template system, using witch you could input an abbrevation
+	 and Emacs will expand it to some template for you, like function
+	 definition, file inclusion ....
