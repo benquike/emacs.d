@@ -37,7 +37,7 @@
 (add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/") t); Org-mode's repository
 
 (defvar my-packages-to-install
-  '(ggtags)
+  '(ggtags company yasnippet ack)
   "The packages Emacs will try to install when it starts up.")
 
 (defun my-packages-installed-p ()
