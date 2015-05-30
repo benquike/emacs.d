@@ -4,19 +4,17 @@
   )
 )
 
-;; (defun load-all-init-files (dir)
-;;   "Load all XXX-init.el and YYY/XXX-init.el files"
-;;   (dolist (initfile (file-expand-wildcards (format "%s/*-init.el" dir) t))
-;;     (message "init file: %s" initfile)
-;;     (load initfile)
-;;   )
-;;   (dolist (initfile (file-expand-wildcards (format "%s/*-init.el" dir) t))
-;;     (message "init file: %s" initfile)
-;;      (load initfile)
-;;   )
-;; )
+(defun load-files-wildcards (wildcards)
+  "Load all the files specified by wildcards"
+  (let ((all-files (file-expand-wildcards wildcards t)))
+    (while all-files
+      (load (car all-files))
+      (setq all-files (cdr all-files))
+    )
+  )
+)
 
-;; (load-all-init-files "~/.emacs.d")
-
-
-(load "~/.emacs.d/ext-packages/dir-init.el")
+(let ((load-dir (file-name-directory load-file-name)))
+  (load-files-wildcards (format "%s/*-init.el" load-dir))
+  (load-files-wildcards (format "%s/**/*-init.el" load-dir))
+)
