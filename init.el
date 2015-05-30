@@ -4,6 +4,11 @@
   )
 )
 
+;; Proxy server setting
+;; (setq url-proxy-services '(("no_proxy" . "default_gateway")
+;;                            ("http" . "HTTP_PROXY_SERVER:PORT")
+;;                            ("https" . "HTTPS_PROXY_SERVER:PORT")))
+
 (defun load-files-wildcards (wildcards)
   "Load all the files specified by wildcards"
   (let ((all-files (file-expand-wildcards wildcards t)))
