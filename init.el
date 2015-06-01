@@ -4,6 +4,7 @@
   )
 )
 
+(require 'cl)
 ;; Proxy server setting
 ;; (setq url-proxy-services '(("no_proxy" . "default_gateway")
 ;;                            ("http" . "HTTP_PROXY_SERVER:PORT")
@@ -22,15 +23,12 @@
 (let ((load-dir (file-name-directory load-file-name)))
   (load-files-wildcards (format "%s/*-init.el" load-dir))
   (load-files-wildcards (format "%s/**/dir-init.el" load-dir))
-  (load-files-wildcards (format "%s/**/*-init.el" load-dir))
 )
 
 ;;; package setup
 ;;; refer to http://emacswiki.org/emacs/ELPA
 
 (require 'package)
-(package-initialize)
-
 ;;; setup the archives
 (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
                          ("marmalade" . "https://marmalade-repo.org/packages/")
@@ -56,5 +54,9 @@
     (when (not (package-installed-p p))
       (package-install p))
   )
-  (message "Checking done")
+  (message "Checking done"))
+
+
+(let ((load-dir (file-name-directory load-file-name)))
+  (load-files-wildcards (format "%s/**/*-init.el" load-dir))
 )
