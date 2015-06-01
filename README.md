@@ -43,3 +43,5 @@ $ git submodule update --init
 * [markdown-mode](http://jblevins.org/projects/markdown-mode/)
 	* The Edit mode for Markdown format
 
+* [org-trello](https://github.com/org-trello/org-trello)
+    * An Emacs interface to use [Trello](https://trello.com).

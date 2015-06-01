@@ -4,6 +4,7 @@
   )
 )
 
+(require 'cl)
 ;; Proxy server setting
 ;; (setq url-proxy-services '(("no_proxy" . "default_gateway")
 ;;                            ("http" . "HTTP_PROXY_SERVER:PORT")
@@ -22,23 +23,25 @@
 (let ((load-dir (file-name-directory load-file-name)))
   (load-files-wildcards (format "%s/*-init.el" load-dir))
   (load-files-wildcards (format "%s/**/dir-init.el" load-dir))
-  (load-files-wildcards (format "%s/**/*-init.el" load-dir))
 )
 
 ;;; package setup
 ;;; refer to http://emacswiki.org/emacs/ELPA
 
 (require 'package)
-(package-initialize)
-
 ;;; setup the archives
 (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
                          ("marmalade" . "https://marmalade-repo.org/packages/")
                          ("melpa" . "http://melpa.org/packages/")))
 (add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/") t); Org-mode's repository
 
+;;; org-trello's repository
+(add-to-list 'package-archives '("melpa-stable" . "http://melpa-stable.milkbox.net/packages") t)
+
+(package-initialize)
+
 (defvar my-packages-to-install
-  '(ggtags company yasnippet ack)
+  '(ggtags company yasnippet ack org-trello)
   "The packages Emacs will try to install when it starts up.")
 
 (defun my-packages-installed-p ()
@@ -56,5 +59,9 @@
     (when (not (package-installed-p p))
       (package-install p))
   )
-  (message "Checking done")
+  (message "Checking done"))
+
+
+(let ((load-dir (file-name-directory load-file-name)))
+  (load-files-wildcards (format "%s/**/*-init.el" load-dir))
 )
