@@ -35,11 +35,13 @@
                          ("melpa" . "http://melpa.org/packages/")))
 (add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/") t); Org-mode's repository
 
+;;; org-trello's repository
+(add-to-list 'package-archives '("melpa-stable" . "http://melpa-stable.milkbox.net/packages") t)
 
 (package-initialize)
 
 (defvar my-packages-to-install
-  '(ggtags company yasnippet ack)
+  '(ggtags company yasnippet ack org-trello)
   "The packages Emacs will try to install when it starts up.")
 
 (defun my-packages-installed-p ()
