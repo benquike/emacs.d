@@ -65,3 +65,17 @@
 (let ((load-dir (file-name-directory load-file-name)))
   (load-files-wildcards (format "%s/**/*-init.el" load-dir))
 )
+
+(defun my-c-mode-common-hook()
+  (whitespace-mode t)
+  (linum-mode t)
+  (c-set-style "python"))
+
+(add-hook 'c-mode-common-hook 'my-c-mode-common-hook)
+
+;; show the bookmarks in the welcome page
+;; TODO: collect the directories the user
+;; accesses frequently and show them
+(require 'bookmark)
+(bookmark-bmenu-list)
+(switch-to-buffer "*Bookmark List*")
