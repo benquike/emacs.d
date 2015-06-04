@@ -1,0 +1,6 @@
+(require 'org-octopress)
+(setq org-octopress-directory-top       "~/src/site/octopress/source")
+(setq org-octopress-directory-posts     "~/src/site/octopress/source/_posts")
+(setq org-octopress-directory-org-top   "~/src/site/octopress/source")
+(setq org-octopress-directory-org-posts "~/src/site/octopress/source/blog")
+(setq org-octopress-setupfile          "~/src/site/octopress/org-sty/setupfile.org")
