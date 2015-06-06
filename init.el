@@ -42,7 +42,10 @@
 
 (defvar my-packages-to-install
   '(ggtags company yasnippet ack org-trello helm org-octopress
-	   undo-tree)
+	   undo-tree
+	   cygwin-mount
+	   magit
+	   )
   "The packages Emacs will try to install when it starts up.")
 
 (defun my-packages-installed-p ()
