@@ -18,30 +18,10 @@ $ git clone --recursive https://github.com/benquike/emacs.d ~/.emacs.d
 $ git submodule update --init
 ```
 
+## Functionality List
 
-## Functionalities included
+[Functionalities included](FunctionalityList.md)
 
-* [Keyfreq](https://github.com/dacap/keyfreq)
-	* A plugin used to collect your key stroke statistics,
-	from which you could see which keys you use mostly and
-	thus decide how to　inprove your edit efficiency by
-	modifying your keybindings.
+## Usage
 
-* [ggtags](https://github.com/leoliu/ggtags)
-	* An Emacs interface for [GNU Global](http://www.gnu.org/software/global/),
-	  a source taging and searching tool.
-
-* [company-mode](http://company-mode.github.io/)
-	* A completion framework, which stands for **comp**lete for
-	**any**thing.
-
-* [yasnippet](https://github.com/capitaomorte/yasnippet)
-	* A template system, using witch you could input an abbrevation
-	 and Emacs will expand it to some template for you, like function
-	 definition, file inclusion ....
-
-* [markdown-mode](http://jblevins.org/projects/markdown-mode/)
-	* The Edit mode for Markdown format
-
-* [org-trello](https://github.com/org-trello/org-trello)
-    * An Emacs interface to use [Trello](https://trello.com).
+[A tour of usage](UsageTour.md)

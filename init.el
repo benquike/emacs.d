@@ -41,7 +41,11 @@
 (package-initialize)
 
 (defvar my-packages-to-install
-  '(ggtags company yasnippet ack org-trello)
+  '(ggtags company yasnippet ack org-trello helm org-octopress
+	   undo-tree
+	   cygwin-mount
+	   magit
+	   )
   "The packages Emacs will try to install when it starts up.")
 
 (defun my-packages-installed-p ()
@@ -65,3 +69,18 @@
 (let ((load-dir (file-name-directory load-file-name)))
   (load-files-wildcards (format "%s/**/*-init.el" load-dir))
 )
+
+(defun my-c-mode-common-hook()
+  (whitespace-mode t)
+  (linum-mode t)
+  (c-set-style "python"))
+
+(add-hook 'c-mode-common-hook 'my-c-mode-common-hook)
+
+;; show the bookmarks in the welcome page
+;; TODO: collect the directories the user
+;; accesses frequently and show them
+(setq inhibit-splash-screen t)
+(require 'bookmark)
+(bookmark-bmenu-list)
+(switch-to-buffer "*Bookmark List*")
