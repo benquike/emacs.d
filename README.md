@@ -24,7 +24,7 @@ $ git submodule update --init
 * [Keyfreq](https://github.com/dacap/keyfreq)
 	* A plugin used to collect your key stroke statistics,
 	from which you could see which keys you use mostly and
-	thus decide how to　inprove your edit efficiency by
+	thus decide how to　improve your edit efficiency by
 	modifying your keybindings.
 
 * [ggtags](https://github.com/leoliu/ggtags)
@@ -45,3 +45,13 @@ $ git submodule update --init
 
 * [org-trello](https://github.com/org-trello/org-trello)
     * An Emacs interface to use [Trello](https://trello.com).
+
+* [undo-tree](http://www.emacswiki.org/emacs/UndoTree)
+    * A package to show your undo history items, and from it you could redo them
+
+* [Magit](https://github.com/magit/magit)
+    * An Emacs interface to use Git
+
+* [org-octopress](https://github.com/yoshinari-nomura/org-octopress)
+    * An emacs interface to manage, write(using [org-mode](http://orgmode.org/))
+	and export static blogs
