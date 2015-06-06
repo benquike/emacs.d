@@ -1,0 +1,10 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: ifdefelse
+# key: ifdefelse
+# binding: direct-keybinding
+# --
+#ifdef ${1:MACRO}
+$0
+#else /* $1 */
+
+#endif /* $1 */
