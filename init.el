@@ -41,7 +41,8 @@
 (package-initialize)
 
 (defvar my-packages-to-install
-  '(ggtags company yasnippet ack org-trello helm org-octopress)
+  '(ggtags company yasnippet ack org-trello helm org-octopress
+	   undo-tree)
   "The packages Emacs will try to install when it starts up.")
 
 (defun my-packages-installed-p ()
