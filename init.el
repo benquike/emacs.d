@@ -84,3 +84,8 @@
 (require 'bookmark)
 (bookmark-bmenu-list)
 (switch-to-buffer "*Bookmark List*")
+
+;; Display time on the status bar
+(setq display-time-day-and-date t
+      display-time-24hr-format t)
+(display-time)
