@@ -25,3 +25,10 @@ $ git submodule update --init
 ## Usage
 
 [A tour of usage](UsageTour.md)
+
+## Reference
+1. [Emacs Redux](http://emacsredux.com/)
+2. [Mastering Emacs](https://www.masteringemacs.org/)
+3. [Xah Emacs Tutorial](http://ergoemacs.org/emacs/emacs.html)
+4. [GNU Emacs Manuals Online](http://www.gnu.org/software/emacs/manual/)
+5. [Pragmatic Emacs](http://pragmaticemacs.com/)
