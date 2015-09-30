@@ -1,6 +1,3 @@
-[submodule "keyfreq"]
-	path = ext-packages/keyfreq
-	url = https://github.com/dacap/keyfreq.git
 [submodule "markdown-mode"]
 	path = ext-packages/markdown-mode
 	url = https://github.com/defunkt/markdown-mode.git
