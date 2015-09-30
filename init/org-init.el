@@ -41,6 +41,7 @@
 (setq org-agenda-files (list "~/worklog/gtd.org"
                              "~/worklog/schedule.org"))
 
+(setq org-export-with-sub-superscripts nil)
 
 (setq org-clock-persist 'history)
 (org-clock-persistence-insinuate)

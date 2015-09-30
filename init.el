@@ -42,6 +42,13 @@
 
 (defvar my-packages-to-install
   '(ggtags company yasnippet ack org-trello helm org-octopress
+	   auto-install dired-sort dired-open
+	   dirtree dropbox enotify google google-c-style google-maps google-translate
+	   org2jekyll org-jira org-gcal org-dropbox org-dashboard org-doing org-ehtml
+	   org-email org-fstree org-outlook org-mime org-pdfview org-pomodoro
+	   openwith octopress
+	   ztree
+	   keyfreq
 	   undo-tree
 	   cygwin-mount
 	   magit
@@ -77,8 +84,3 @@
 (require 'bookmark)
 (bookmark-bmenu-list)
 (switch-to-buffer "*Bookmark List*")
-
-;; Display time on the status bar
-(setq display-time-day-and-date t
-      display-time-24hr-format t)
-(display-time)
