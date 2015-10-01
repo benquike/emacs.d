@@ -58,6 +58,7 @@
 	   ;; calendar
 	   calfw calfw-gcal
 	   cal-china-x
+	   elscreen elscreen-persist
 	   undo-tree
 	   cygwin-mount
 	   magit
