@@ -1,3 +1,6 @@
 [submodule "markdown-mode"]
 	path = ext-packages/markdown-mode
 	url = https://github.com/defunkt/markdown-mode.git
+[submodule "ext-packages/emacs-calfw"]
+	path = ext-packages/emacs-calfw
+	url = https://github.com/kiwanami/emacs-calfw.git

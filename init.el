@@ -55,6 +55,9 @@
 	   ztree
 	   keyfreq guide-key guide-key-tip
 	   switch-window
+	   ;; calendar
+	   calfw calfw-gcal
+	   cal-china-x
 	   undo-tree
 	   cygwin-mount
 	   magit
