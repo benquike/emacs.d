@@ -42,6 +42,23 @@
 
 (defvar my-packages-to-install
   '(ggtags company yasnippet ack org-trello helm org-octopress
+	   auto-install dired-sort dired-open
+	   dirtree dropbox enotify google google-c-style google-maps google-translate
+	   org2jekyll org-jira org-gcal org-dropbox org-dashboard org-doing org-ehtml
+	   org-email org-fstree org-outlook org-mime org-pdfview org-pomodoro
+	   org-jekyll org-present org-password-manager
+	   org-mac-iCal
+	   bbdb bbdb-china bbdb-csv-import
+	   w3m
+	   openwith octopress
+	   orglink
+	   ztree
+	   keyfreq guide-key guide-key-tip
+	   switch-window
+	   ;; calendar
+	   calfw calfw-gcal
+	   cal-china-x
+	   elscreen elscreen-persist
 	   undo-tree
 	   cygwin-mount
 	   magit
@@ -69,13 +86,6 @@
 (let ((load-dir (file-name-directory load-file-name)))
   (load-files-wildcards (format "%s/**/*-init.el" load-dir))
 )
-
-(defun my-c-mode-common-hook()
-  (whitespace-mode t)
-  (linum-mode t)
-  (c-set-style "python"))
-
-(add-hook 'c-mode-common-hook 'my-c-mode-common-hook)
 
 ;; show the bookmarks in the welcome page
 ;; TODO: collect the directories the user
