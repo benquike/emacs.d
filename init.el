@@ -46,9 +46,15 @@
 	   dirtree dropbox enotify google google-c-style google-maps google-translate
 	   org2jekyll org-jira org-gcal org-dropbox org-dashboard org-doing org-ehtml
 	   org-email org-fstree org-outlook org-mime org-pdfview org-pomodoro
+	   org-jekyll org-present org-password-manager
+	   org-mac-iCal
+	   bbdb bbdb-china bbdb-csv-import
+	   w3m
 	   openwith octopress
+	   orglink
 	   ztree
-	   keyfreq
+	   keyfreq guide-key guide-key-tip
+	   switch-window
 	   undo-tree
 	   cygwin-mount
 	   magit

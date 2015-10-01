@@ -46,3 +46,13 @@
 (setq org-clock-persist 'history)
 (org-clock-persistence-insinuate)
 (setq org-clock-idle-time 15)
+
+; Here is your client ID
+; 590318881610-p4tq27m1b6lq8no8vombmks763pvss9p.apps.googleusercontent.com
+
+; Here is your client secret
+; FkXzQIb0hMxtKtXt4MJu1omk
+(require 'org-gcal)
+(setq org-gcal-client-id "590318881610-p4tq27m1b6lq8no8vombmks763pvss9p.apps.googleusercontent.com"
+      org-gcal-client-secret "FkXzQIb0hMxtKtXt4MJu1omk"
+      org-gcal-file-alist '(("benquike@gmail.com" .  "~/worklog/schedule.org")))
