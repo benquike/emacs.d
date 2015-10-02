@@ -7,3 +7,9 @@
 [submodule "ext-packages/evernote-mode"]
 	path = ext-packages/evernote-mode
 	url = https://github.com/pymander/evernote-mode
+[submodule "ext-packages/geeknote"]
+	path = ext-packages/geeknote
+	url = git://github.com/VitaliyRodnenko/geeknote.git
+[submodule "ext-packages/emacs-geeknote"]
+	path = ext-packages/emacs-geeknote
+	url = https://github.com/avendael/emacs-geeknote.git
