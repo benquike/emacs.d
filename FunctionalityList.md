@@ -34,3 +34,10 @@
 * [org-octopress](https://github.com/yoshinari-nomura/org-octopress)
     * An emacs interface to manage, write(using [org-mode](http://orgmode.org/))
 	and export static blogs
+
+* [evernote-mode](https://github.com/pymander/evernote-mode)
+    * An emacs interface to use [Evernote](www.evernote.com)
+
+* [emacs-geeknote](https://github.com/avendael/emacs-geeknote)
+    * Another interesting emacs interface to use [Evernote](www.evernote.com), which is based
+      on [Geeknote](https://github.com/VitaliyRodnenko/geeknote)
