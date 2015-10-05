@@ -3,3 +3,12 @@
 
 # Packaging
 .cask
+
+# emacs backup files
+*~
+
+# elpa directory
+elpa/*
+
+# bookmarks file
+bookmarks

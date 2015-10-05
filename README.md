@@ -41,3 +41,6 @@ $ git submodule update --init
 ### gnus
 1. [XSteve's Gnus page](http://www.xsteve.at/prg/gnus/)
 2. [Practical guide to use Gnus with Gmail](http://blog.binchen.org/posts/notes-on-using-gnus.html)
+
+### Yasnippet
+1. [Writing snippets](https://capitaomorte.github.io/yasnippet/snippet-development.html)

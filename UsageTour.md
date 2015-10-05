@@ -17,4 +17,10 @@ to run execute the following command
 The bookmarks saved will be shown in the **Bookmark Lists** the next time your start
 Emacs.
 
+## Winner mode
+We usually use `C-x 2` `C-x 3` `C-x 0` `C-x 1` etc, to manage our windows in Emacs.
+Sometimes, we need to restore our previous window setting.
+* Restore `C-x 4 u`
+* Redo `C-x 4 r`
+
 # To be continued ...

@@ -1,4 +1,7 @@
 ;; Display time on the status bar
+
+(server-start)
+
 (setq display-time-day-and-date t
       display-time-24hr-format t)
 (display-time)
@@ -17,3 +20,7 @@
 (global-set-key (kbd "C-x o") 'switch-window)
 
 (show-paren-mode)
+
+(winner-mode 1)
+(global-set-key (kbd "C-x 4 u") 'winner-undo)
+(global-set-key (kbd "C-x 4 r") 'winner-redo)
