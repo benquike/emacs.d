@@ -1,0 +1,5 @@
+(require 'which-key)
+(which-key-mode)
+(which-key-setup-side-window-bottom)
+(which-key-setup-minibuffer)
+(setq which-key-popup-type 'minibuffer)
