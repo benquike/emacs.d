@@ -63,6 +63,8 @@
 	   cygwin-mount
 	   magit
 	   auto-yasnippet function-args
+	   jabber jabber-otr
+	   which-key
 	   )
   "The packages Emacs will try to install when it starts up.")
 

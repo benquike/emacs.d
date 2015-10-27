@@ -1,0 +1,15 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: testgroud
+# key: tg
+# binding: direct-keybinding
+# --
+TEST_GROUP(${1:TEST_GROUP_NAME})
+{
+	void setup()
+	{
+		$0
+	}
+	void teardown()
+	{
+	}
+};

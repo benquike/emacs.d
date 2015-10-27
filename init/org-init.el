@@ -56,3 +56,13 @@
 (setq org-gcal-client-id "590318881610-p4tq27m1b6lq8no8vombmks763pvss9p.apps.googleusercontent.com"
       org-gcal-client-secret "FkXzQIb0hMxtKtXt4MJu1omk"
       org-gcal-file-alist '(("benquike@gmail.com" .  "~/worklog/schedule.org")))
+
+(require 'org-notify)
+(org-notify-start)
+(org-notify-add 'appt
+                '(:time "-1s" :period "20s" :duration 10
+                  :actions (-message -ding))
+                '(:time "15m" :period "2m" :duration 100
+                  :actions -notify)
+                '(:time "2h" :period "5m" :actions -message)
+                '(:time "3d" :actions -email))
