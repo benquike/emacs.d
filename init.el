@@ -65,6 +65,7 @@
 	   auto-yasnippet function-args
 	   jabber jabber-otr
 	   which-key
+	   material-theme
 	   )
   "The packages Emacs will try to install when it starts up.")
 
