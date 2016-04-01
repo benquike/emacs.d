@@ -21,6 +21,8 @@
 
 (if (string-equal window-system "x")
     (linum-mode t))
+(defalias 'yes-or-no-p 'y-or-n-p)
+
 
 (show-paren-mode)
 
