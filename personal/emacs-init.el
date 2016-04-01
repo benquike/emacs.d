@@ -19,6 +19,9 @@
 
 (global-set-key (kbd "C-x o") 'switch-window)
 
+(if (string-equal window-system "x")
+    (linum-mode t))
+
 (show-paren-mode)
 
 (winner-mode 1)
