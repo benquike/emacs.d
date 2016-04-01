@@ -4,11 +4,11 @@
 # binding: direct-keybinding
 # --
 /*******************************************************
- * Copyright (C) 2015 ${1:`(user-full-name)`} <${2}>
+ * Copyright (C) `(format-time-string "%Y"))` ${1:`(user-full-name)`} <`(symbol-value 'user-mail-address)`>
  *
- * This file is part of {project}.
+ * This file is part of ${2:project}.
  *
- * {project} can not be copied and/or distributed without
- * the express permission of ${1}
+ * The source files from $2 can not be copied and/or
+ * distributed without the express permission of $1
  *******************************************************/
 $0

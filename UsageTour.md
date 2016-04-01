@@ -23,4 +23,7 @@ Sometimes, we need to restore our previous window setting.
 * Restore `C-x 4 u`
 * Redo `C-x 4 r`
 
+## graphviz-dot-mode
+[graphviz-dot-mode](doc/graphviz-dot-mode.md)
+
 # To be continued ...

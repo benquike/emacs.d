@@ -65,6 +65,8 @@
 	   auto-yasnippet function-args
 	   jabber jabber-otr
 	   which-key
+	   material-theme
+	   graphviz-dot-mode
 	   )
   "The packages Emacs will try to install when it starts up.")
 

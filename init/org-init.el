@@ -66,3 +66,15 @@
                   :actions -notify)
                 '(:time "2h" :period "5m" :actions -message)
                 '(:time "3d" :actions -email))
+
+(require 'ob)
+
+(org-babel-do-load-languages
+ 'org-babel-load-languages
+ '((sh . t)
+   (ditaa . t)
+   (plantuml . t)
+   (dot . t)
+   (ruby . t)
+   (js . t)
+   (C . t)))

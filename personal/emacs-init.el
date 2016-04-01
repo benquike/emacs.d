@@ -24,3 +24,7 @@
 (winner-mode 1)
 (global-set-key (kbd "C-x 4 u") 'winner-undo)
 (global-set-key (kbd "C-x 4 r") 'winner-redo)
+
+(require 'graphviz-dot-mode)
+
+(load-theme 'material-light t)
