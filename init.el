@@ -67,6 +67,7 @@
 	   which-key
 	   material-theme
 	   graphviz-dot-mode
+          ag
 	   )
   "The packages Emacs will try to install when it starts up.")
 
