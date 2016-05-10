@@ -6,15 +6,21 @@
       display-time-24hr-format t)
 (display-time)
 (require 'openwith)
-(setq openwith-associations '(
-			      ("\\.pdf\\'" "evince" (file))
-			      ("\\.odt\\'" "libreoffice" (file))
-			      ("\\.doc\\'" "libreoffice" (file))
-			      ("\\.docx\\'" "libreoffice" (file))
-			      ("\\.ppt\\'" "libreoffice" (file))
-			      ("\\.pptx\\'" "libreoffice" (file))
-			      )
-      )
+
+(cond
+ ((string-equal system-type "gnu/linux")
+  (progn
+    (setq openwith-associations '(
+				  ("\\.pdf\\'" "evince" (file))
+				  ("\\.odt\\'" "libreoffice" (file))
+				  ("\\.doc\\'" "libreoffice" (file))
+				  ("\\.docx\\'" "libreoffice" (file))
+				  ("\\.ppt\\'" "libreoffice" (file))
+				  ("\\.pptx\\'" "libreoffice" (file))
+				  )
+	  )
+    )))
+
 (openwith-mode t)
 
 (global-set-key (kbd "C-x o") 'switch-window)
