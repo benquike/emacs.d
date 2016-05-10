@@ -33,3 +33,9 @@
 (require 'graphviz-dot-mode)
 
 (load-theme 'material-light t)
+
+;;; whitespace mode
+;;; Reference: https://www.emacswiki.org/emacs/EightyColumnRule
+(require 'whitespace)
+(setq whitespace-style '(face empty tabs lines-tail trailing))
+(global-whitespace-mode t)
