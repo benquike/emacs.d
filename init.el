@@ -45,7 +45,7 @@
 	   auto-install dired-sort dired-open
 	   dirtree dropbox enotify google google-c-style google-maps google-translate
 	   org2jekyll org-jira org-gcal org-dropbox org-dashboard org-doing org-ehtml
-	   org-email org-fstree org-outlook org-mime org-pdfview org-pomodoro
+	   org-fstree org-outlook org-pdfview org-pomodoro
 	   org-jekyll org-present org-password-manager
 	   org-mac-iCal
 	   bbdb bbdb-china bbdb-csv-import
@@ -67,7 +67,9 @@
 	   which-key
 	   material-theme
 	   graphviz-dot-mode
-          ag
+	   ag
+	   mediawiki
+	   tomatinho
 	   )
   "The packages Emacs will try to install when it starts up.")
 
