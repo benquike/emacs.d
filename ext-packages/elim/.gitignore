@@ -1,0 +1,9 @@
+*~
+*.o
+elisp/*.elc
+TAGS
+elim-client
+elim-func-handlers.c
+handler-list.h
+signals/sigs.h
+ui_ops/ops.h

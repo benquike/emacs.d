@@ -1,14 +1,18 @@
-`;; org octopress setting up
-(require 'org-octopress)
-(setq org-octopress-directory-top       "~/src/site/octopress/source")
-(setq org-octopress-directory-posts     "~/src/site/octopress/source/_posts")
-(setq org-octopress-directory-org-top   "~/src/site/octopress/source")
-(setq org-octopress-directory-org-posts "~/src/site/octopress/source/blog")
-(setq org-octopress-setupfile          "~/src/site/octopress/org-sty/setupfile.org")
-
 ;; setting up capture
+(require 'org-habit)
+(require 'org-pomodoro)
+
 (setq org-default-notes-file "~/worklog/capture.org")
 (define-key global-map "\C-cc" 'org-capture)
+(global-set-key (kbd "C-c b") 'org-iswitchb)
+
+(require 'kanban)
+
+(global-set-key (kbd "C-c C-x C-i") 'org-pomodoro)
+(global-set-key (kbd "C-c C-x C-o") 'org-pomodoro)
+
+(setq org-todo-keywords
+      '((sequence "TODO" "DOING" "REPORT" "DONE")))
 
 (setq org-capture-templates
       '(("t" "Todo" entry (file+headline "~/worklog/gtd.org" "Tasks")
@@ -57,6 +61,21 @@
       org-gcal-client-secret "FkXzQIb0hMxtKtXt4MJu1omk"
       org-gcal-file-alist '(("benquike@gmail.com" .  "~/worklog/schedule.org")))
 
+(setq org-tag-faces
+      '(("Doing" :foreground "#FF0000")))
+
+(defun my-sparse-doing-tree ()
+  (interactive)
+  (org-tags-view nil "Doing"))
+
+(define-key org-mode-map (kbd "C-c 3") 'my-sparse-doing-tree)
+
+(org-defkey org-agenda-mode-map [(tab)]
+  '(lambda () (interactive)
+    (org-agenda-goto)
+    (with-current-buffer "*Org Agenda*"
+      (org-agenda-quit))))
+
 (require 'org-notify)
 (org-notify-start)
 (org-notify-add 'appt
@@ -78,3 +97,5 @@
    (ruby . t)
    (js . t)
    (C . t)))
+
+(org-add-link-type "ebib" 'ebib-open-org-link)

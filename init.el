@@ -2,7 +2,11 @@
   (when (version<= emacs-version minver)
     (message "Your Emacs is a little bit old, some functionalities might not work, please use the latest version")
   )
-)
+  )
+
+(setq user-full-name "Hui Peng"
+       user-mail-address "peng124@purdue.edu"
+       message-generate-headers-first t)
 
 (require 'cl)
 ;; Proxy server setting
@@ -40,14 +44,21 @@
 
 (package-initialize)
 
+
 (defvar my-packages-to-install
   '(ggtags company yasnippet ack org-trello helm org-octopress
 	   auto-install dired-sort dired-open
 	   dirtree dropbox enotify google google-c-style google-maps google-translate
 	   org2jekyll org-jira org-gcal org-dropbox org-dashboard org-doing org-ehtml
-	   org-email org-fstree org-outlook org-mime org-pdfview org-pomodoro
+
+	   org-email org-fstree
+	   ;; org-outlook
+	   org-mime org-pdfview org-pomodoro
+
 	   org-jekyll org-present org-password-manager
-	   org-mac-iCal
+	   org-mac-iCal org-alert org-beautify-theme
+	   org-toodledo
+	   org-wunderlist
 	   bbdb bbdb-china bbdb-csv-import
 	   w3m
 	   openwith octopress
@@ -64,9 +75,45 @@
 	   magit
 	   auto-yasnippet function-args
 	   jabber jabber-otr
+	   origami
 	   which-key
+	   sauron
+	   elfeed-web
+	   elfeed-org
+	   visual-regexp
+           phi-search
+	   web-mode
+	   php-mode
+	   php-auto-yasnippets
+	   php-completion
+	   rich-minority
+	   x86-lookup
+	   zotelo
+	   multiple-cursors
+	   expand-region
+	   kanban
+	   google-this
+	   google-contacts
 	   material-theme
-	   graphviz-dot-mode
+
+	   auctex
+	   company-auctex
+	   youdao-dictionary
+;;	   graphviz-dot-mode
+	   ebib
+;;	   cmake-ide
+	   cmake-font-lock
+	   cmake-mode
+	   cpputils-cmake
+           ag
+           gitlab
+	   helm-gitlab
+	   xwidgete
+           swift-mode
+           mu4e-alert
+           realgud
+	   go-mode
+	   chinese-pyim
 	   )
   "The packages Emacs will try to install when it starts up.")
 
@@ -87,10 +134,13 @@
   )
   (message "Checking done"))
 
-
 (let ((load-dir (file-name-directory load-file-name)))
   (load-files-wildcards (format "%s/**/*-init.el" load-dir))
 )
+
+;; setting up the IME
+(require 'ibus)
+(add-hook 'after-init-hook 'ibus-mode-on)
 
 ;; show the bookmarks in the welcome page
 ;; TODO: collect the directories the user
@@ -99,3 +149,31 @@
 (require 'bookmark)
 (bookmark-bmenu-list)
 (switch-to-buffer "*Bookmark List*")
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(c++-indent-level 2)
+ '(c-basic-offset 2)
+ '(evernote-developer-token
+   "S=s6:U=b7a7d:E=159ad4d4cc7:C=152559c1f28:P=1cd:A=en-devtoken:V=2:H=5c0eb309ba2357025a2dd0b7d6858e6e")
+ '(fill-column 80)
+ '(indent-tabs-mode nil)
+ '(org-trello-current-prefix-keybinding "C-c o" nil (org-trello))
+ '(org-trello-files (file-expand-wildcards "~/worklog/org-trello/*.org") nil (org-trello))
+ '(orgtrello-log-level orgtrello-log-debug nil (org-trello))
+ '(orgtrello-setup-use-position-in-checksum-computation nil)
+ '(package-selected-packages
+   (quote
+    (latex-preview-pane ag graphviz-dot-mode cpputils-cmake cmake-font-lock cmake-ide ebib youdao-dictionary company-auctex auctex material-theme google-contacts google-this kanban expand-region multiple-cursors zotelo x86-lookup rich-minority php-completion php-auto-yasnippets php-mode web-mode phi-search visual-regexp elfeed-org elfeed-web sauron which-key origami jabber-otr jabber function-args auto-yasnippet magit cygwin-mount undo-tree elscreen-persist elscreen cal-china-x calfw-gcal calfw switch-window guide-key-tip guide-key keyfreq ztree orglink octopress openwith w3m bbdb-csv-import bbdb-china bbdb org-wunderlist org-toodledo org-beautify-theme org-alert org-mac-iCal org-password-manager org-present org-jekyll org-pomodoro org-pdfview org-mime org-fstree org-email org-ehtml org-doing org-dashboard org-dropbox org-gcal org-jira org2jekyll google-translate google-maps google-c-style google enotify dropbox dirtree dired-open dired-sort auto-install org-octopress helm org-trello ack yasnippet company ggtags)))
+ '(safe-local-variable-values (quote ((c-style . whitesmith))))
+ '(send-mail-function (quote smtpmail-send-it))
+ '(smtpmail-smtp-server "smtp.purdue.edu")
+ '(smtpmail-smtp-service 25))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
