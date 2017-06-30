@@ -44,3 +44,6 @@ $ git submodule update --init
 
 ### Yasnippet
 1. [Writing snippets](https://capitaomorte.github.io/yasnippet/snippet-development.html)
+
+### Newsreader
+1. [elfeed](https://github.com/skeeto/elfeed)

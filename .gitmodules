@@ -13,3 +13,15 @@
 [submodule "ext-packages/emacs-geeknote"]
 	path = ext-packages/emacs-geeknote
 	url = https://github.com/avendael/emacs-geeknote.git
+[submodule "ext-packages/elim"]
+	path = ext-packages/elim
+	url = http://git.savannah.gnu.org/r/elim.git
+[submodule "ext-packages/ibus-el"]
+	path = ext-packages/ibus-el
+	url = https://github.com/pkg-ime/ibus-el.git
+[submodule "ext-packages/mu"]
+	path = ext-packages/mu
+	url = https://github.com/djcb/mu.git
+[submodule "ext-packages/deft"]
+	path = ext-packages/deft
+	url = git://jblevins.org/git/deft.git
