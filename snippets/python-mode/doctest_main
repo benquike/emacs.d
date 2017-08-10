@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: doctest_main
+# key: dtm
+# --
+if __name__ == "__main__":
+    import doctest
+    doctest.testmod()
