@@ -114,6 +114,7 @@
            realgud
 	   go-mode
 	   chinese-pyim
+	   bison-mode
 	   )
   "The packages Emacs will try to install when it starts up.")
 
