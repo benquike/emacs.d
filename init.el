@@ -115,6 +115,8 @@
 	   go-mode
 	   chinese-pyim
 	   bison-mode
+	   column-enforce-mode
+	   exec-path-from-shell
 	   )
   "The packages Emacs will try to install when it starts up.")
 
