@@ -113,6 +113,11 @@
            mu4e-alert
            realgud
 	   go-mode
+           go-guru
+           exec-path-from-shell
+           company-go
+           flymake-go
+           neotree
 	   chinese-pyim
 	   bison-mode
 	   column-enforce-mode
