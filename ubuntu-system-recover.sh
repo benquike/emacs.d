@@ -44,3 +44,14 @@ sudo apt-get install -y libwebkit2gtk-4.0-dev
 sudo apt-get install -y libtiff-dev libgif-dev libxpm-dev
 sudo apt-get install -y mailutils
 sudo apt-get install -y silversearcher-ag
+
+
+# sogou pinyin
+sudo apt-get install fcitx
+sudo apt-get install fcitx-config-gtk
+sudo apt-get install fcitx-table-all
+sudo apt-get install im-switch
+
+# language packages
+sudo apt-get install language-pack-ja
+sudo apt-get install language-pack-zh
